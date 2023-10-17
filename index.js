@@ -13,16 +13,28 @@ const app = express();
 const bugCheck = debug('index');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const finopsViewRouter = express.Router();
 
 app.use(morgan('combined')); // replace combined with tiny if you want less console printout
-app.use(express.static(path.join(__dirname,'/public/')));
+//app.use(express.static(path.join(__dirname,'/public/')));
+app.use(express.static('static'));
 
 app.set('views','./src/views');
 app.set('view engine','ejs');
+
+
 app.get('/',(req,res)=> {
     res.render('index');
 });
 
-app.listen(3000,() => {
+finopsViewRouter.route('/').get((req,res) => {
+    res.render('finops');
+});
+
+
+
+app.use('/finops', finopsViewRouter);
+
+app.listen(PORT,() => {
     bugCheck(`listening on port ${chalk.green(PORT)}`);
 });
