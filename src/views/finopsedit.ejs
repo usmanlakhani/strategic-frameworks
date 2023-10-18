@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>FinOps Configuration</title>
+	</head>
+	
+	<body>
+        <div>
+            <table border="1px solid black" style="width:99%;height:20%">
+                <tr id="menuRow">
+                    <td colspan="4" style="background-color: #444">
+                        <div style="text-align:center;margin:auto">
+                            <font id="topic" size="10" style="color: #fff;"></font>
+                            <br/>
+                            <br/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;vertical-align:middle">
+                        <h1 style="color:#21b6db;font-size:20px;">Business Strategy</h1>
+                    </td>
+                    <td style="text-align:center;vertical-align:middle;"><h1 style="color:#21b6db;font-size:20px;">IT Strategy</h1></td>
+                    <td style="text-align:center;vertical-align:middle;"><h1 style="color:#21b6db;font-size:20px;">Capabilities</h1></td>
+                    <td style="text-align:center;vertical-align:middle;"><h1 style="color:#21b6db;font-size:20px;">Enablers</h1></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;" id="rblBiz"></td>
+                    <td style="vertical-align:top;" id="cbListIT"></td>
+                    <td style="vertical-align:top;" id="cbListCap"></td>
+                    <td style="vertical-align:top;" id="cbListEnablers"></td>
+                </tr>
+                <tr>
+                    <td id="updateHierarchyButton" colspan=4 style="text-align:center"></td>
+                </tr>
+            </table>
+        </div>
+
+        <script type="module" src="/js/finops-edit.js" defer ></script>
+	</body>	
+</html>
