@@ -1,7 +1,5 @@
 [
     {"type":"framework","domain":"FinOps","view":"./finops","edit":"./finopsedit","activeView":"true","editView":"false"},
-    {"type":"framework","domain":"DevSecOps","view":"./devsecops/devsecops.html","edit":"./wip.html","activeView":"true","editView":"false"},
-    {"type":"framework","domain":"RPA","view":"./rpa/rpa.html","edit":"./wip.html","activeView":"true","editView":"false"},
-    {"type":"framework","domain":"Multi-Cloud Hybrid Architecture","view":"./wip.html","edit":"./wip.html","activeView":"false","editView":"false"},
-    {"type":"framework","domain":"Employee Experience","view":"./empexp/empexp.html","edit":"./wip.html","activeView":"true","editView":"false"}
+    {"type":"framework","domain":"DevSecOps","view":"./devsecops","edit":"./wip.html","activeView":"true","editView":"false"},
+    {"type":"framework","domain":"Employee Experience","view":"./empexp","edit":"./wip.html","activeView":"true","editView":"false"}
 ]
