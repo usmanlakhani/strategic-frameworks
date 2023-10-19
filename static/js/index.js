@@ -49,12 +49,12 @@ function renderHTMLAnchorLinks(indexJson){
             if(dataInChunk[index].activeView === 'true')
                 linkView.href = dataInChunk[index].view;
 
-            // 2a.2 Edit link
+             // 2a.2 Edit link
             var linkEdit = document.createElement('a');
-            linkEdit.innerHTML = 'Edit';
+            linkEdit.innerHTML = 'Edit is being worked upon';
             newEditTD.appendChild(linkEdit);
             if(dataInChunk[index].editView === 'true')
-                linkEdit.href = dataInChunk[index].edit;
+                linkEdit.href = dataInChunk[index].edit; 
                 
         }
 

@@ -206,13 +206,7 @@ function getSelectedCheckBoxes(selectedId){
     return selectedId + ',' + selectedCheckBoxesId;
 }
 
-function updateDataFile(combinedArray){
-    
-    //** Dirty Hack */
-    // tree has duplicate value and I don't know why.
-    // Therefore, before I do any sort of file updating, I will make sure the dupes are gone
-    //console.log(fs);
-    
-
+function updateDataFile(combinedArray){    
+    //const fs = jsonfile;
 }
 
